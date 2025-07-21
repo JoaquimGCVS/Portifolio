@@ -1,0 +1,22 @@
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+.apresentacao img {
+    width: 100%;
+}
+
+.paragrafo {
+    font-size: var(--font-s3);
+}
+
+.redes {
+    display: flex;
+    gap: 5rem;
+}

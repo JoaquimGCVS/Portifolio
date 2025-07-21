@@ -8,10 +8,13 @@
     justify-content: space-around;
 }
 
-.logo {
+.navegacao .logo {
     display: flex;
-    align-items: center;
     gap: 0.5rem;
+}
+
+.navegacao .logo h1, .navegacao .logo {
+    color: var(--cor-vermelho);
 }
 
 .navegacao ul {
@@ -22,4 +25,20 @@
 
 .navegacao a {
     text-decoration: none;
+}
+
+.navegacao a.active {
+    position: relative;
+    color: var(--cor-vermelho); 
+}
+
+.navegacao a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--cor-vermelho); 
+    border-radius: 2px;
 }

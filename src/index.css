@@ -8,11 +8,9 @@
 }
 
 :root {
-  --cor-branco: #FFFFFF;         
-  --cor-cinza-claro: #F5F5F5;   
-  --cor-cinza-medio: #B0B0B0;     
-  --cor-preto: #111111;           
-  --cor-azul-suave: #0077FF;    
+  --cor-branco: #FFFFFF;            
+  --cor-vermelho: #BE3144;     
+  --cor-preto: #000000;               
   --font-s1: 1rem;
   --font-s2: 1.2rem;
   --font-s3: 1.4rem;
@@ -26,13 +24,15 @@ body {
 
 h1, h2, h3 {
   font-size: var(--font-s3);
+  color: var(--cor-preto);
 }
 
 p {
   font-size: var(--font-s2);
+  color: var(--cor-preto);
 }
 
 a {
   font-size: var(--font-s1);
-  color: var(--cor-preto)
+  color: var(--cor-preto);
 }
