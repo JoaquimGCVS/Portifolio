@@ -1,44 +1,33 @@
 import './Apresentacao.css';
 import { useState, useEffect } from 'react';
-import me from '../../assets/me.webp';
+import me from '../../assets/me2.png';
+import { MdOutlineFileDownload } from "react-icons/md";
+import { RiWhatsappLine } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
+
+const fullText = "I'm Joaquim Vilela!";
 
 const Apresentacao = () => {
     const [displayText, setDisplayText] = useState('');
-    const [currentIndex, setCurrentIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const fullText = "I'm Joaquim Vilela!";
-    const typingSpeed = 150; 
-    const deletingSpeed = 100; 
-    const pauseTime = 2000; 
 
     useEffect(() => {
-        const speed = isDeleting ? deletingSpeed : typingSpeed;
-
-        if (!isDeleting && currentIndex < fullText.length) {
-            // Digitando
-            const timeout = setTimeout(() => {
-                setDisplayText(prev => prev + fullText[currentIndex]);
-                setCurrentIndex(prev => prev + 1);
-            }, speed);
-            return () => clearTimeout(timeout);
-        } else if (!isDeleting && currentIndex === fullText.length) {
-            // Pausa antes de começar a apagar
-            const timeout = setTimeout(() => {
-                setIsDeleting(true);
-            }, pauseTime);
-            return () => clearTimeout(timeout);
-        } else if (isDeleting && currentIndex > 0) {
-            // Apagando
-            const timeout = setTimeout(() => {
-                setDisplayText(prev => prev.slice(0, -1));
-                setCurrentIndex(prev => prev - 1);
-            }, speed);
-            return () => clearTimeout(timeout);
-        } else if (isDeleting && currentIndex === 0) {
-            // Reinicia o ciclo
+        let timeout;
+        if (!isDeleting && displayText.length < fullText.length) {
+            timeout = setTimeout(() => {
+                setDisplayText(fullText.slice(0, displayText.length + 1));
+            }, 150);
+        } else if (!isDeleting && displayText.length === fullText.length) {
+            timeout = setTimeout(() => setIsDeleting(true), 2000);
+        } else if (isDeleting && displayText.length > 0) {
+            timeout = setTimeout(() => {
+                setDisplayText(fullText.slice(0, displayText.length - 1));
+            }, 100);
+        } else if (isDeleting && displayText.length === 0) {
             setIsDeleting(false);
         }
-    }, [currentIndex, isDeleting, fullText]);
+        return () => clearTimeout(timeout);
+    }, [displayText, isDeleting]);
 
     return (
         <div className="apresentacao">
@@ -47,7 +36,20 @@ const Apresentacao = () => {
                     {displayText}
                     <span className="cursor">|</span>
                 </p>
-                <p>Desenvolvedor Full Stack e graduando em Engenharia de Software na PUC Minas, crio soluções web sob medida que elevam a eficiência do seu negócio com React, Java e Spring Boot.</p>
+                <h2>FULL-STACK DEVELOPER</h2>
+                <p>Entrego soluções digitais modernas, escaláveis e intuitivas. Trabalho com sites e sistemas integrados, sempre focando em criar experiências de valor.</p>
+
+                <a href="/Joaquim_Curriculo.pdf" download className="cv-a">
+                    <MdOutlineFileDownload size={30} /> Download CV
+                </a>
+                <div className='links'>
+                    <a href="https://wa.me/5531998185196" target="_blank" rel="noopener noreferrer" className="whatsapp-a">
+                        <RiWhatsappLine size={50} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/joaquim-vilela/" target="_blank" rel="noopener noreferrer" className="linkedin-a">
+                        <FaLinkedin size={50} />
+                    </a>
+                </div>
             </div>
             <img src={me} alt="me" />
         </div>
