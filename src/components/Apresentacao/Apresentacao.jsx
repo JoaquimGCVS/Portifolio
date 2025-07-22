@@ -1,40 +1,57 @@
 import './Apresentacao.css';
-import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { BiLogoGmail } from "react-icons/bi";
+import { useState, useEffect } from 'react';
+import me from '../../assets/me.webp';
 
-const Apresentacao = () => (
-    <div className="apresentacao">
-        
-            <img
-                src="https://readme-typing-svg.herokuapp.com?font=Press+Start+2P&pause=1000&color=BE3144&center=true&vCenter=true&width=600&lines=Hello+World!"
-                alt="Typing SVG"
-            />
-            <div className="paragrafo">
-                <p>Sou um desenvolvedor de 19 anos, apaixonado por tecnologia e inovação.</p>
-                <p>Atualmente curso Engenharia de Software na PUC Minas.</p>
-                <p>Estou em constante evolução, buscando experiência prática e novos desafios na área de desenvolvimento de software.</p>
+const Apresentacao = () => {
+    const [displayText, setDisplayText] = useState('');
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const fullText = "I'm Joaquim Vilela!";
+    const typingSpeed = 150; 
+    const deletingSpeed = 100; 
+    const pauseTime = 2000; 
+
+    useEffect(() => {
+        const speed = isDeleting ? deletingSpeed : typingSpeed;
+
+        if (!isDeleting && currentIndex < fullText.length) {
+            // Digitando
+            const timeout = setTimeout(() => {
+                setDisplayText(prev => prev + fullText[currentIndex]);
+                setCurrentIndex(prev => prev + 1);
+            }, speed);
+            return () => clearTimeout(timeout);
+        } else if (!isDeleting && currentIndex === fullText.length) {
+            // Pausa antes de começar a apagar
+            const timeout = setTimeout(() => {
+                setIsDeleting(true);
+            }, pauseTime);
+            return () => clearTimeout(timeout);
+        } else if (isDeleting && currentIndex > 0) {
+            // Apagando
+            const timeout = setTimeout(() => {
+                setDisplayText(prev => prev.slice(0, -1));
+                setCurrentIndex(prev => prev - 1);
+            }, speed);
+            return () => clearTimeout(timeout);
+        } else if (isDeleting && currentIndex === 0) {
+            // Reinicia o ciclo
+            setIsDeleting(false);
+        }
+    }, [currentIndex, isDeleting, fullText]);
+
+    return (
+        <div className="apresentacao">
+            <div className="texto">
+                <p className="typing-text">
+                    {displayText}
+                    <span className="cursor">|</span>
+                </p>
+                <p>Desenvolvedor Full Stack e graduando em Engenharia de Software na PUC Minas, crio soluções web sob medida que elevam a eficiência do seu negócio com React, Java e Spring Boot.</p>
             </div>
-            <div className="redes">
-                <a href="https://www.linkedin.com/in/joaquim-vilela/" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin color="var(--cor-vermelho)" size={50} />
-                </a>
-                <a href="https://github.com/JoaquimGCVS" target="_blank" rel="noopener noreferrer">
-                    <FaGithub color="var(--cor-vermelho)" size={50} />
-                </a>
-                <a href="mailto:joaquimvilela0902@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <BiLogoGmail color="var(--cor-vermelho)" size={50} />
-                </a>
-                <a href="https://instagram.com/joaquimvilela_" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram color="var(--cor-vermelho)" size={50} />
-                </a>
-                <a href="https://wa.me/5531998185196" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp color="var(--cor-vermelho)" size={50} />
-                </a>
-            </div>
-       
-        
-    </div>
-)
+            <img src={me} alt="me" />
+        </div>
+    );
+};
 
 export default Apresentacao;

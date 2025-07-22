@@ -14,25 +14,26 @@
   --font-s1: 1rem;
   --font-s2: 1.2rem;
   --font-s3: 1.4rem;
+  --font-s4: 2.5rem;
 }
 
 body {
-  background-color: var(--cor-branco);
-  color: var(--cor-preto);
+  background-color: var(--cor-preto);
+  color: var(--cor-branco);
   font-family: 'Nunito', sans-serif;
 }
 
 h1, h2, h3 {
   font-size: var(--font-s3);
-  color: var(--cor-preto);
+  color: var(--cor-branco);
 }
 
 p {
   font-size: var(--font-s2);
-  color: var(--cor-preto);
+  color: var(--cor-branco);
 }
 
 a {
   font-size: var(--font-s1);
-  color: var(--cor-preto);
+  color: var(--cor-branco);
 }
