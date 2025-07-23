@@ -1,18 +1,17 @@
-import { Link, NavLink } from "react-router-dom";
-import "./Header.css";
+import { Link } from "react-router-dom";
+import './Header.css';
 
 const Header = () => (
     <header className="header">
-        <nav className="navegacao">
-            <Link to="/" ><h1>Joaquim Vilela</h1></Link>
-            <ul>
-                <li><NavLink to="/" end>Home</NavLink></li>
-                <li><NavLink to="/sobre">Sobre</NavLink></li>
-                <li><NavLink to="/projetos">Projetos</NavLink></li>
-                <li><NavLink to="/contato">Contato</NavLink></li>
+        <nav>
+            <ul className="rotas">
+                <li><Link to="/" className="rota">Home</Link></li>
+                <li><Link to="/sobre" className="rota">Sobre</Link></li>
+                <li><Link to="/projetos" className="rota">Projetos</Link></li>
+                <li><Link to="/contato" className="rota">Contato</Link></li>
             </ul>
         </nav>
     </header>
 )
 
-export default Header; 
+export default Header;

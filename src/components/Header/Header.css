@@ -1,52 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
-
 .header {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
-.navegacao {
+.rotas {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10rem;
 }
 
-.navegacao .logo-link {
-    display: flex;
-    gap: 0.5rem;
-    font-family: 'Urbanist', sans-serif;
-}
-
-.navegacao .logo h1, .navegacao .logo {
-    color: var(--cor-cinza);
-}
-
-.navegacao ul {
-    display: flex;
-    list-style: none;
-    gap: 5rem;
-}
-
-.navegacao a {
+.rota {
     text-decoration: none;
+    color: var(--cor-preto);
 }
 
-.navegacao a.active {
-    position: relative;
-    color: #888888; 
-}
-
-.navegacao a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background: var(--cor-cinza); 
-    border-radius: 2px;
-}
-
-.logo-link.active {
-    color: inherit;
-    position: static;
-}

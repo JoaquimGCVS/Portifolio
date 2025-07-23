@@ -22,18 +22,3 @@ body {
   color: var(--cor-branco);
   font-family: 'Nunito', sans-serif;
 }
-
-h1, h2, h3 {
-  font-size: var(--font-s3);
-  color: var(--cor-preto);
-}
-
-p {
-  font-size: var(--font-s2);
-  color: var(--cor-preto);
-}
-
-a {
-  font-size: var(--font-s1);
-  color: var(--cor-preto);
-}
