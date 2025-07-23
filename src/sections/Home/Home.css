@@ -42,7 +42,7 @@
 }
 
 .botao-cv:hover {
-   
+    color: var(--cor-cinza);
 }
 
 .texto .redes-sociais {
@@ -53,6 +53,10 @@
 .texto .rede-social {
     font-size: var(--font-s4);
     color: var(--cor-cinza);
+}
+
+.texto .rede-social:hover {
+    color: var(--cor-preto);
 }
 
 .imagem {
