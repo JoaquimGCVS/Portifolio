@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     gap: 10rem;
+    list-style: none;
 }
 
 .rota {

@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
 }
 
 :root {
@@ -14,11 +11,11 @@
   --font-s1: 1rem;
   --font-s2: 1.5rem;
   --font-s3: 2rem;
-  --font-s4: 2.5rem;
+  --font-s4: 3rem;
 }
 
 body {
   background-color: var(--cor-branco);
-  color: var(--cor-branco);
-  font-family: 'Nunito', sans-serif;
+  color: var(--cor-preto);
+  font-family: 'Inter', sans-serif;
 }
