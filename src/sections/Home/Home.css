@@ -40,10 +40,11 @@
     box-shadow: 0 2px 8px var(--cor-cinza);
     gap: 0.5rem;
     width: 300px;
+    transition: background 0.2s ease;
 }
 
 .botao-cv:hover {
-    color: var(--cor-cinza);
+    background-color:var(--cor-hover);
 }
 
 .texto .redes-sociais {
@@ -54,6 +55,7 @@
 .texto .rede-social {
     font-size: var(--font-s4);
     color: var(--cor-cinza);
+    transition: color 0.2s ease;
 }
 
 .texto .rede-social:hover {

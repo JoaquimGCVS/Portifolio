@@ -1,35 +1,45 @@
-import { useState } from "react";
+import React, { useRef } from "react";
 import "./Carrosel.css";
 
 const Carrossel = ({ imagens }) => {
-  const [indice, setIndice] = useState(0);
-  const imagensPorPagina = 3;
+  const containerRef = useRef(null);
 
-  // Avança uma imagem por vez
-  const anterior = () =>
-    setIndice((i) => (i === 0 ? imagens.length - 1 : i - 1));
-  const proximo = () =>
-    setIndice((i) => (i === imagens.length - 1 ? 0 : i + 1));
+  const scroll = (direction) => {
+    const container = containerRef.current;
+    const slideWidth = container.offsetWidth / 3 + 32; // largura + gap (2rem = 32px)
+    const scrollLeft = container.scrollLeft;
+    const maxScroll = container.scrollWidth - container.clientWidth;
 
-  // Seleciona 3 imagens consecutivas, circulando pelo array
-  const imagensExibidas = [
-    imagens[indice % imagens.length],
-    imagens[(indice + 1) % imagens.length],
-    imagens[(indice + 2) % imagens.length],
-  ];
+    if (direction === "right") {
+      if (scrollLeft + slideWidth >= maxScroll) {
+        container.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        container.scrollBy({ left: slideWidth, behavior: "smooth" });
+      }
+    } else {
+      if (scrollLeft - slideWidth <= 0) {
+        container.scrollTo({ left: maxScroll, behavior: "smooth" });
+      } else {
+        container.scrollBy({ left: -slideWidth, behavior: "smooth" });
+      }
+    }
+  };
 
   return (
-    <div className="carrossel">
-      <button className="seta" onClick={anterior}>&lt;</button>
-      {imagensExibidas.map((img, idx) => (
-        <img
-          key={indice + '-' + idx}
-          src={img}
-          alt={`certificado-${indice + idx}`}
-          className="carrossel-img"
-        />
-      ))}
-      <button className="seta" onClick={proximo}>&gt;</button>
+    <div className="carrossel-wrapper">
+      <button className="navegar esquerda" onClick={() => scroll("left")}>
+        &#10094;
+      </button>
+      <div className="carrossel-container" ref={containerRef}>
+        {imagens.map((src, index) => (
+          <div className="slide" key={index}>
+            <img src={src} alt={`Slide ${index}`} />
+          </div>
+        ))}
+      </div>
+      <button className="navegar direita" onClick={() => scroll("right")}>
+        &#10095;
+      </button>
     </div>
   );
 };

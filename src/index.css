@@ -6,9 +6,10 @@
 
 :root {
   --cor-branco: #FFFFFF;            
-  --cor-cinza: #888888;     
+  --cor-cinza: rgba(0, 0, 0, 0.5);     
   --cor-cinza-claro: #e0e0e0;
-  --cor-preto: #000000;               
+  --cor-preto: #000000; 
+  --cor-hover: rgba(0, 0, 0, 0.7); 
   --font-s1: 1.1rem;
   --font-s2: 1.5rem;
   --font-s3: 2rem;

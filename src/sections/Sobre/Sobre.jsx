@@ -17,7 +17,6 @@ import certHtmlCss1 from '../../assets/certificados/htmlcss/HTML-CSS1.webp';
 import certHtmlCss2 from '../../assets/certificados/htmlcss/HTML-CSS2.webp';
 import certHtmlCss3 from '../../assets/certificados/htmlcss/HTML-CSS3.webp';
 import certHtmlCss4 from '../../assets/certificados/htmlcss/HTML-CSS3.webp';
-import Marquee from "../../components/Marquee/Marquee";
 import Carrossel from "../../components/Carrosel/Carrosel";
 
 
