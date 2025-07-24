@@ -4,6 +4,8 @@ import { SiJavascript, SiSpring, SiMysql, SiC } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { SiVercel, SiNetlify, SiVite, SiFigma } from "react-icons/si";
 
+import certEv1 from '../../assets/certificados/eventos/AulaMagna.webp';
+
 import certTs1 from '../../assets/certificados/typescript/TypeScript1.webp';
 
 import certJava1 from '../../assets/certificados/java/JavaPOO.webp'
@@ -29,7 +31,8 @@ const certificados = [
     certHtmlCss1,
     certHtmlCss2,
     certHtmlCss3,
-    certHtmlCss4
+    certHtmlCss4,
+    certEv1
 ];
 
 const Sobre = () => (
