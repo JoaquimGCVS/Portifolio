@@ -1,0 +1,26 @@
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.carrossel-img {
+  height: 18rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--cor-cinza);
+  transition: transform 0.5s, opacity 0.5s;
+  width: 400px;
+}
+
+.seta {
+  background: var(--cor-branco);
+  border: 2px solid var(--cor-cinza);
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+.seta:hover {
+  background: var(--cor-cinza);
+}
