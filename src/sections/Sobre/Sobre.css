@@ -1,0 +1,46 @@
+.sobre-section {
+    padding: 4rem 8rem;
+}
+
+.card-tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+.card-tecnologias h2 {
+    font-size: var(--font-s3);
+}
+
+.tecnologias, .ferramentas {
+   display: flex;
+   gap: 5rem;
+}
+
+.tecnologia, .ferramenta {
+    font-size: var(--font-s4);
+}
+
+.tecnologias {
+    padding: 5rem 0;
+}
+
+.card-sobre {
+    color: var(--cor-preto);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-sobre h2 {
+    font-size: var(--font-s3);
+    display: flex;
+    align-items: center;
+}
+
+.card-sobre p {
+    font-size: var(--font-s1);
+}

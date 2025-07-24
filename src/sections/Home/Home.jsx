@@ -1,7 +1,6 @@
 import Typing from "../../components/Typing/Typing";
 import './Home.css';
-import me from '../../assets/me.jpeg'
-import { MdOutlineFileDownload } from "react-icons/md";
+import me from '../../assets/me.jpeg';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
