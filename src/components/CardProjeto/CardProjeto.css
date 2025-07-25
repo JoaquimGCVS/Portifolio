@@ -28,9 +28,13 @@
     gap: 1rem;
 }
 
-.overlay .titulo, .overlay span {
+.overlay .titulo {
     font-size: var(--font-s2);
     padding: 0;
+}
+
+.overlay span {
+    font-size: var(--font-s3);
 }
 
 .tecnologias-projeto {

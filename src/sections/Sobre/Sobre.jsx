@@ -6,7 +6,7 @@ import certEv1 from '../../assets/certificados/eventos/AulaMagna.webp';
 
 import certTs1 from '../../assets/certificados/typescript/TypeScript1.webp';
 
-import certJava1 from '../../assets/certificados/java/JavaPOO.webp'
+import certJava1 from '../../assets/certificados/java/JavaPOO.webp';
 
 import certReact1 from '../../assets/certificados/react/React1.webp';
 import certReact2 from '../../assets/certificados/react/React2.webp';
