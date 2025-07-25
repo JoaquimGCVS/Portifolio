@@ -1,8 +1,6 @@
 import "./Sobre.css";
-import { FaJava, FaReact, FaHtml5, FaCss3Alt, FaUserGraduate, FaSearch, FaUsers, FaCertificate } from "react-icons/fa";
-import { SiJavascript, SiSpring, SiMysql, SiC } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa";
-import { SiVercel, SiNetlify, SiVite, SiFigma } from "react-icons/si";
+import { FaJava, FaReact, FaHtml5, FaCss3Alt, FaUserGraduate, FaSearch, FaUsers, FaGitAlt } from "react-icons/fa";
+import { SiJavascript, SiSpring, SiMysql, SiC, SiVercel, SiNetlify, SiVite, SiFigma } from "react-icons/si";
 
 import certEv1 from '../../assets/certificados/eventos/AulaMagna.webp';
 

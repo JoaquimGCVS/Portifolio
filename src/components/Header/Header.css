@@ -27,12 +27,12 @@
 
 .rota {
     text-decoration: none;
-    color: var(--cor-preto);
+    color: var(--cor-hover);
     font-size: var(--font-s1);
+    transition: color 0.2s ease;
 }
 
 .rota:hover {
-  
-    border-bottom: 2px solid var(--cor-preto);
+    color: var(--cor-preto);
 }
 

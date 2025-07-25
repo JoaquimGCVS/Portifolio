@@ -10,6 +10,7 @@ function AppRouter() {
             <Routes>
                 <Route path="/" element={<OnePage scrollTo="home"/>} />
                 <Route path="/sobre" element={<OnePage scrollTo="sobre"/>} />
+                <Route path="/projetos" element={<OnePage scrollTo="projetos"/>} />
             </Routes>
         </BrowserRouter>
     )

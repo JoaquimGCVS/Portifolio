@@ -1,8 +1,8 @@
 .home-section {
-    padding: 0 8rem;
+    padding: 8rem 8rem;
     display: flex;
     align-items: center;
-    height: 100vh;
+    margin-top: 55px;
 }
 
 .texto {

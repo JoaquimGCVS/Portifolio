@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Home from './Home/Home';
 import Sobre from './Sobre/Sobre';
 import { useLocation } from "react-router-dom";
+import Projetos from "./Projetos/Projetos";
 
 const OnePage = ({ scrollTo }) => {
   const location = useLocation();
@@ -17,6 +18,7 @@ const OnePage = ({ scrollTo }) => {
     <>
       <Home />
       <Sobre />
+      <Projetos />
     </>
   );
 };

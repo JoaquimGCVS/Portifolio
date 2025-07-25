@@ -1,0 +1,15 @@
+.projetos-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 8rem;
+}
+
+.container-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 5rem;
+}
