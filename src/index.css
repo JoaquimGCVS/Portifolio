@@ -5,7 +5,7 @@
 }
 
 :root {
-  --cor-branco: #FFFFFF;            
+  --cor-branco: #ffffff;            
   --cor-cinza: rgba(0, 0, 0, 0.5);     
   --cor-cinza-claro: #e0e0e0;
   --cor-preto: #000000; 
@@ -22,6 +22,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }

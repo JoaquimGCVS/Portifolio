@@ -1,0 +1,68 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-conteudo {
+    background: var(--cor-branco);
+    border-radius: 10px;
+    color: var(--cor-preto);
+    display: flex;
+    min-width: 350px;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 2rem;
+    align-items: flex-start;
+}
+
+.projeto-conteudo {
+    display: flex;
+    gap: 2rem;
+}
+
+.projeto-conteudo iframe {
+    width: 600px;
+    height: 360px;
+}
+
+.projeto-conteudo .texto-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+.projeto-conteudo h3    {
+    font-size: var(--font-s3);
+}
+
+.projeto-conteudo span {
+    font-size: var(--font-s4);
+}
+
+.projeto-conteudo p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--font-s2);
+    color: var(--cor-cinza);
+}
+
+.btn-fechar {
+    background: transparent;
+    border: none;
+    font-size: var(--font-s3);
+    color: var(--cor-cinza);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.btn-fechar:hover {
+    color: var(--cor-preto);
+}
