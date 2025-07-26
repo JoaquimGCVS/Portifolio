@@ -30,6 +30,9 @@
     color: var(--cor-hover);
     font-size: var(--font-s1);
     transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .rota:hover {
