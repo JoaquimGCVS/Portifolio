@@ -1,0 +1,33 @@
+.contato-section {
+    padding: 4rem 8rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+    align-items: center;
+}
+
+.contato-section h2 {
+    font-size: var(--font-s3);
+}
+
+.minhas-redes-sociais {
+    display: flex;
+    gap: 5rem;
+    font-size: 4rem;
+}
+
+.minhas-redes-sociais a {
+    color: var(--cor-preto);
+    transition: color 0.2s ease;
+}
+
+.minhas-redes-sociais a:hover {
+    color: var(--cor-hover);
+}
+
+.contato-section .citacao {
+    font-size: var(--font-s3);
+    color: var(--cor-cinza);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}

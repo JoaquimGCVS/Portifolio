@@ -83,7 +83,7 @@ const Projetos = () => {
 
   return (
     <section id="projetos" className="projetos-section">
-      <h2>Meus Projetos</h2>
+      <h2>&lt;Meus Projetos/&gt;</h2>
       <div className="container-projetos">
         {projetos.map((projeto, idx) => (
           <CardProjeto
