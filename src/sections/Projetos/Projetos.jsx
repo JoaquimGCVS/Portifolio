@@ -1,6 +1,10 @@
 import CardProjeto from "../../components/CardProjeto/CardProjeto";
 import "./Projetos.css";
-import certEv1 from '../../assets/certificados/eventos/AulaMagna.webp';
+
+import certSiteInst from '../../assets/projetos/SiteInstitucionalOrtho.webp';
+import certEstoqueOrtho from '../../assets/projetos/EstoqueOrtho.webp';
+import certEstoqueFull from '../../assets/projetos/EstoqueFullStack.webp';
+import certPortifolio from '../../assets/projetos/Portifolio.webp';
 
 import { FaJava, FaReact, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa";
 import { SiJavascript, SiSpring, SiMysql, SiC, SiVercel, SiNetlify, SiVite, SiFigma } from "react-icons/si";
@@ -9,62 +13,33 @@ import { useState } from "react";
 
 const projetos = [
   {
-    titulo: "Outro Projeto",
-    imagem: certEv1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem omnis, quae quaerat quisquam nostrum enim. Ratione expedita sapiente animi ullam enim dolor consequuntur molestias amet incidunt nobis? Veniam, corporis.",
-    tecnologias: [<FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />],
+    titulo: "Site Institucional Orthomóveis Colchões Orthocrin",
+    imagem: certSiteInst,
+    desc: "Site institucional oficial da loja Orthomóveis Colchões Orthocrin, desenvolvido inteiramente por Joaquim Vilela utilizando React + Vite. O projeto tem como objetivo destacar os produtos da loja, sua história, tradição desde 1972 e seus principais diferenciais competitivos. Toda a estrutura do site foi pensada para manter a harmonia visual, evitar poluição visual e ao mesmo tempo destacar com elegância as informações mais importantes, sempre seguindo as demandas do cliente.",
+    tecnologias: [<FaReact />, <SiJavascript />, <SiNetlify/>],
     video: "https://www.youtube.com/embed/daZwzn-8GJk"
   },
   {
-    titulo: "Outro Projeto",
-    imagem: certEv1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem omnis, quae quaerat quisquam nostrum enim. Ratione expedita sapiente animi ullam enim dolor consequuntur molestias amet incidunt nobis? Veniam, corporis.",
-    tecnologias: [<FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />],
+    titulo: "Estoque Orthomóveis Colchões Orthocrin",
+    imagem: certEstoqueOrtho,
+    desc: "",
+    tecnologias: [<FaHtml5 />, <FaCss3Alt />, <SiJavascript />, <SiNetlify/>],
     video: "https://www.youtube.com/embed/daZwzn-8GJk"
   },
   {
-    titulo: "Outro Projeto",
-    imagem: certEv1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem omnis, quae quaerat quisquam nostrum enim. Ratione expedita sapiente animi ullam enim dolor consequuntur molestias amet incidunt nobis? Veniam, corporis.",
-    tecnologias: [<FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />],
+    titulo: "Joaquim Estoque Full-Stack",
+    imagem: certEstoqueFull,
+    desc: "Um sistema full stack para gerenciamento de estoque, desenvolvido utilizando Spring Boot com banco de dados MySQL no back-end e HTML + CSS e JavaScript puro no front-end. A aplicação permite realizar o cadastro de produtos, controle de entrada e saída, além de acompanhar o estoque em tempo real de forma simples e eficiente.",
+    tecnologias: [<FaJava />, <SiSpring />, <SiMysql/>, <FaHtml5 />, <FaCss3Alt />, <SiJavascript />, <SiNetlify/>],
     video: "https://www.youtube.com/embed/daZwzn-8GJk"
   },
   {
-    titulo: "Outro Projeto",
-    imagem: certEv1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem omnis, quae quaerat quisquam nostrum enim. Ratione expedita sapiente animi ullam enim dolor consequuntur molestias amet incidunt nobis? Veniam, corporis.",
-    tecnologias: [<FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />],
-    video: "https://www.youtube.com/embed/daZwzn-8GJk"
-  },
-  {
-    titulo: "Outro Projeto",
-    imagem: certEv1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem omnis, quae quaerat quisquam nostrum enim. Ratione expedita sapiente animi ullam enim dolor consequuntur molestias amet incidunt nobis? Veniam, corporis.",
-    tecnologias: [<FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />],
-    video: "https://www.youtube.com/embed/daZwzn-8GJk"
-  },
-  {
-    titulo: "Outro Projeto",
-    imagem: certEv1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem omnis, quae quaerat quisquam nostrum enim. Ratione expedita sapiente animi ullam enim dolor consequuntur molestias amet incidunt nobis? Veniam, corporis.",
-    tecnologias: [<FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />],
-    video: "https://www.youtube.com/embed/daZwzn-8GJk"
-  },
-  {
-    titulo: "Outro Projeto",
-    imagem: certEv1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem omnis, quae quaerat quisquam nostrum enim. Ratione expedita sapiente animi ullam enim dolor consequuntur molestias amet incidunt nobis? Veniam, corporis.",
-    tecnologias: [<FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />],
-    video: "https://www.youtube.com/embed/daZwzn-8GJk"
-  },
-  {
-    titulo: "Outro Projeto",
-    imagem: certEv1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem omnis, quae quaerat quisquam nostrum enim. Ratione expedita sapiente animi ullam enim dolor consequuntur molestias amet incidunt nobis? Veniam, corporis.",
-    tecnologias: [<FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />, <FaCss3Alt />],
+    titulo: "Portifólio - Joaquim Vilela",
+    imagem: certPortifolio,
+    desc: "",
+    tecnologias: [<FaReact />, <SiJavascript />, <SiNetlify/>],
     video: "https://www.youtube.com/embed/daZwzn-8GJk"
   }
-  // ...adicione outros projetos se quiser
 ];
 
 const Projetos = () => {

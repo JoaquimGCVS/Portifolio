@@ -12,7 +12,6 @@ const CardProjeto = ({ titulo, imagem, tecnologias, onClick }) => (
             </div>
         </div>
     </div>
-)
-    ;
+);
 
 export default CardProjeto;

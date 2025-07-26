@@ -17,7 +17,7 @@
     color: var(--cor-preto);
     display: flex;
     min-width: 350px;
-    max-width: 90vw;
+    max-width: 80vw;
     max-height: 90vh;
     padding: 2rem;
     align-items: flex-start;
@@ -46,12 +46,14 @@
 }
 
 .projeto-conteudo span {
-    font-size: var(--font-s4);
+    font-size: var(--font-s3);
+    padding-right: 0.5rem;
+    margin-top: auto;
 }
 
 .projeto-conteudo p {
     font-family: 'JetBrains Mono', monospace;
-    font-size: var(--font-s2);
+    font-size: var(--font-s1);
     color: var(--cor-cinza);
 }
 
