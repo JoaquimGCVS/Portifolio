@@ -36,7 +36,7 @@ const projetos = [
   {
     titulo: "Portifólio - Joaquim Vilela",
     imagem: certPortifolio,
-    desc: "",
+    desc: "O projeto tem como objetivo apresentar minha trajetória profissional, habilidades técnicas, projetos desenvolvidos e certificações obtidas de forma elegante e interativa. A estrutura do site foi pensada para manter a harmonia visual, evitar poluição visual e ao mesmo tempo destacar as informações mais importantes, criando uma experiência profissional para visitantes e recrutadores.",
     tecnologias: [<FaReact />, <SiJavascript />, <SiNetlify/>],
     video: "https://www.youtube.com/embed/daZwzn-8GJk"
   }
