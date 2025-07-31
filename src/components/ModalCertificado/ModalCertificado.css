@@ -1,0 +1,26 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: var(--cor-branco);
+    border-radius: 10px;
+    color: var(--cor-preto);
+    display: flex;
+    align-items: flex-start;
+    width: 60vw;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}

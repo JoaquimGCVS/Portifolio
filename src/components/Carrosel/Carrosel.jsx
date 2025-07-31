@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Carrosel.css";
 
-const Carrossel = ({ imagens }) => {
+const Carrossel = ({ imagens, onImageClick }) => {
   const containerRef = useRef(null);
 
   const scroll = (direction) => {
@@ -34,11 +34,11 @@ const Carrossel = ({ imagens }) => {
       <div className="carrossel-container" ref={containerRef}>
         {imagens.map((src, index) => (
           <div className="slide" key={index}>
-            <img src={src} alt={`Slide ${index}`} />
+            <img src={src} alt={`Slide ${index}`} onClick={() => onImageClick && onImageClick(src)} style={{ cursor: 'pointer' }}/>
           </div>
         ))}
       </div>
-      <button className="navegar direita" onClick={() => scroll("right")}>
+      <button className="navegar direita" onClick={() => scroll("right")} >
         &#10095;
       </button>
     </div>

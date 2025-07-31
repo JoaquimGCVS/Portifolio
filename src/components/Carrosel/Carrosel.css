@@ -34,6 +34,11 @@
   border-radius: 0.5rem;
   object-fit: cover;
   box-shadow: 0 2px 8px var(--cor-cinza);
+  transition: transform 0.2s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.05);
 }
 
 .navegar {

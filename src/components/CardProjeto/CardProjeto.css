@@ -7,7 +7,6 @@
     overflow: hidden;
     display: flex;
     transition: transform 0.2s ease;
-    border-bottom: 5px solid var(--cor-preto);
     box-shadow: 0 2px 8px var(--cor-cinza);
     cursor: pointer;
 }

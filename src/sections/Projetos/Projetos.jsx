@@ -22,7 +22,7 @@ const projetos = [
     linkGithub: "https://github.com/JoaquimGCVS/site-institucional-orthomoveis"
   },
   {
-    titulo: "Estoque Orthomóveis Colchões Orthocrin",
+    titulo: "Sistema de Estoque Orthomóveis Colchões Orthocrin",
     imagem: certEstoqueOrtho,
     desc: "O sistema executa um CRUD completo para produtos, clientes e vendas, com persistência de dados via localStorage. A aplicação inclui funcionalidades de importação e exportação de dados em JSON, facilitando processos de backup, migração e recuperação dos dados, além de sustentar o modelo de armazenamento local. O projeto conta com um dashboard dinâmico que apresenta indicadores-chave de desempenho do estoque e dos produtos, além de relatórios de vendas interativos com filtros por múltiplos critérios.",
     tecnologias: [<FaHtml5 />, <FaCss3Alt />, <SiJavascript />, <SiNetlify/>],
