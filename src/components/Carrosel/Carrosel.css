@@ -65,10 +65,23 @@
   .slide {
     flex: 0 0 calc((100% - 2rem) / 2);
   }
+
+  .carrossel-wrapper {
+    gap: 1rem;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 585px) {
   .slide {
     flex: 0 0 100%;
+  }
+
+  .carrossel-wrapper {
+    gap: 0.5rem;
+  }
+
+  .navegar {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
