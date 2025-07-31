@@ -19,3 +19,9 @@
         opacity: 0;
     }
 }
+
+@media (max-width:430px) {
+    .typing {
+        font-size: var(--font-s2) ;
+    }
+}

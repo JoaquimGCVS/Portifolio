@@ -52,25 +52,34 @@ const Sobre = () => {
 
     return (
         <section id="sobre" className="sobre-section">
-                <div className="texto-sobre">
-                <div className="card-tecnologias">
-                    <h2>Do front ao back: criando experiências completas</h2>
+            <div className="texto-sobre">
+                <div className="card-tecnologias-ferramentas">
+                    <h2>Tecnologias que trabalho</h2>
                     <div className="tecnologias">
-                        <span className="tecnologia" title="Java"><FaJava /></span>
-                        <span className="tecnologia" title="React"><FaReact /></span>
-                        <span className="tecnologia" title="JavaScript"><SiJavascript /></span>
-                        <span className="tecnologia" title="Spring"><SiSpring /></span>
-                        <span className="tecnologia" title="HTML5"><FaHtml5 /></span>
-                        <span className="tecnologia" title="CSS3"><FaCss3Alt /></span>
-                        <span className="tecnologia" title="MySQL"><SiMysql /></span>
-                        <span className="tecnologia" title="C"><SiC /></span>
+                        <div className="grupo-1">
+                            <span className="tecnologia" title="Java"><FaJava /></span>
+                            <span className="tecnologia" title="React"><FaReact /></span>
+                            <span className="tecnologia" title="JavaScript"><SiJavascript /></span>
+                            <span className="tecnologia" title="Spring"><SiSpring /></span>
+                        </div>
+                        <div className="grupo-2">
+                            <span className="tecnologia" title="HTML5"><FaHtml5 /></span>
+                            <span className="tecnologia" title="CSS3"><FaCss3Alt /></span>
+                            <span className="tecnologia" title="MySQL"><SiMysql /></span>
+                            <span className="tecnologia" title="C"><SiC /></span>
+                        </div>
                     </div>
+                    <h2>Feramentas que trabalho</h2>
                     <div className="ferramentas">
-                        <span className="ferramenta" title="Git"><FaGitAlt /></span>
-                        <span className="ferramenta" title="Vercel"><SiVercel /></span>
-                        <span className="ferramenta" title="Netlify"><SiNetlify /></span>
-                        <span className="ferramenta" title="Vite"><SiVite /></span>
-                        <span className="ferramenta" title="Figma"><SiFigma /></span>
+                        <div className="grupo-1">
+                            <span className="ferramenta" title="Git"><FaGitAlt /></span>
+                            <span className="ferramenta" title="Vercel"><SiVercel /></span>
+                            <span className="ferramenta" title="Netlify"><SiNetlify /></span>
+                            <span className="ferramenta" title="Vite"><SiVite /></span>
+                        </div>
+                        <div className="grupo-2">
+                            <span className="ferramenta" title="Figma"><SiFigma /></span>
+                        </div>
                     </div>
                 </div>
                 <div className="card-sobre">
@@ -85,7 +94,7 @@ const Sobre = () => {
                     <p>
                         Acredito que cada ajuste, cada decisão e cada linha de código contribuem para um resultado final mais profissional, eficiente e agradável de usar. Busco sempre unir organização, estética e clareza para entregar soluções completas e de qualidade.
                     </p>
-                    <h2><FaUsers style={{ marginRight: "0.5rem" }} /> Habilidades que vão além do código.</h2>
+                    <h2><FaUsers style={{ marginRight: "0.5rem" }} />Além do código.</h2>
                     <p>
                         Além da parte técnica, valorizo a comunicação clara, o comprometimento com prazos e a entrega com qualidade. Já participei de projetos reais onde pude exercitar a empatia com o usuário, a colaboração em equipe e o foco em resultados concretos.
                     </p>
@@ -93,10 +102,10 @@ const Sobre = () => {
             </div>
             <div className="certificados">
                 <h2>Certificados</h2>
-                <Carrossel imagens={certificados} onImageClick={abrirModal}/>
+                <Carrossel imagens={certificados} onImageClick={abrirModal} />
             </div>
             {modalAberto && (
-                <ModalCertificado 
+                <ModalCertificado
                     imageSrc={certificadoSelecionado}
                     onClose={fecharModal}
                 />

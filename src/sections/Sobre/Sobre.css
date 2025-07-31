@@ -6,34 +6,44 @@
 }
 
 .texto-sobre {
-    padding: 0 8rem;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .sobre-section h2 {
     font-size: var(--font-s3);
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
-.card-tecnologias {
+.card-tecnologias-ferramentas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 8rem;
+    align-items: center;
+}
+
+.grupo-1, .grupo-2 {
+    display: flex;
+    gap: 5rem;
 }
 
 .tecnologias, .ferramentas {
    display: flex;
    gap: 5rem;
+   padding: 5rem 0;
+}
+
+.ferramentas {
+    padding-bottom: 0;
 }
 
 .tecnologia, .ferramenta {
     font-size: var(--font-s4);
-}
-
-.tecnologias {
-    padding: 5rem 0;
+    margin: 0 auto;
 }
 
 .card-sobre {
@@ -52,4 +62,43 @@
     align-items: center;
     flex-direction: column;
     gap: 5rem;
+}
+
+@media (max-width: 1100px) {
+    .home-section {
+        flex-direction: column;
+    }
+
+    .card-tecnologias h2 {
+        text-align: center;
+    }
+
+    .tecnologias, .ferramentas {
+        gap: 3rem;
+    }
+
+    .grupo-1, .grupo-2 {
+        display: flex;
+        gap: 3rem;
+    }      
+}
+
+
+@media (max-width:725px) {
+    .tecnologias, .ferramentas {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .grupo-1, .grupo-2 {
+        display: flex;
+        gap: 2rem;
+    }  
+
+}
+
+@media (max-width: 560px) {
+    .tecnologias, .ferramentas {
+        flex-direction: column;
+    }
 }
