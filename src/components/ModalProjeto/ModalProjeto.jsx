@@ -15,10 +15,12 @@ const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub }) => {
                 <div className="projeto-conteudo">
                     <div className="video-links">
                         <iframe src={projeto.video} title={projeto.titulo} frameBorder="0" allowFullScreen />
-                        <div className="links">
+                        <div className="h3-links">
                             <h3>Disponível em: </h3>
-                            <a href={linkSite} target="_blank"><TbWorld size={20}/> Site</a>
-                            <a href={linkGithub} target="_blank"><FaGithub size={20}/> Código</a>
+                            <div className="links">
+                                <a href={linkSite} target="_blank"><TbWorld size={20}/> Site</a>
+                                <a href={linkGithub} target="_blank"><FaGithub size={20}/> Código</a>
+                            </div>
                         </div>
                     </div>
                     <div className="texto-modal">
