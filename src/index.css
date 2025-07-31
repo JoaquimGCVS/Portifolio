@@ -27,19 +27,9 @@
 
 @media (max-width:725px) {
   :root {
-  --font-s1: 0.6rem;
   --font-s2: 1.1rem;
   --font-s3: 1.3rem;
   --font-s4: 2rem;
-}
-}
-
-@media (max-width:430px) {
-    :root {
-  --font-s1: 0.5rem;
-  --font-s2: 0.9rem;
-  --font-s3: 1.1rem;
-  --font-s4: 1.7rem;
 }
 }
 

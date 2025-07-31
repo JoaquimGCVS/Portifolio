@@ -73,6 +73,7 @@
     .home-section {
         flex-direction: column;
         gap: 5rem;
+        padding-top: 8rem;
     }
 }
 
@@ -80,5 +81,11 @@
     .imagem img {
         width: 250px;
         height: 250px;
+    }
+}
+
+@media (max-width: 585px) {
+    .home-section {
+        padding-top: 5rem;
     }
 }

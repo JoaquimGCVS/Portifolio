@@ -1,8 +1,5 @@
 .header {
     padding: 1rem 0;
-}
-
-.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,9 +8,11 @@
     background: var(--cor-branco);
     transition: transform 0.3s;
 }
+
 .header.hide {
     transform: translateY(-100%);
 }
+
 .header.show {
     transform: translateY(0);
 }
@@ -39,20 +38,99 @@
     color: var(--cor-preto);
 }
 
-@media (max-width:870px) {
+/* Botão hambúrguer - inicialmente oculto */
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1001;
+    background: var(--cor-branco);
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: var(--font-s3);
+    color: var(--cor-preto);
+    transition: transform 0.3s;
+    border: none;
+}
+
+/* Hide/Show para o botão hambúrguer */
+.menu-toggle.hide {
+    transform: translateY(-100px);
+}
+
+.menu-toggle.show {
+    transform: translateY(0);
+}
+
+/* Overlay para fechar sidebar */
+.sidebar-overlay {
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 998;  /* ← Diminua de 999 para 998 */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+@media (max-width: 870px) {
     .rotas {
         gap: 5rem;
     }
 }
 
-@media (max-width:725px) {
-    .rotas {
-        gap: 3rem;
-    }
-}
+@media (max-width: 585px) {
 
-@media (max-width:430px) {
+    /* Mostra botão hambúrguer */
+    .menu-toggle {
+        display: block;
+    }
+
+   .header.show,
+    .header.hide {
+        transform: translateX(-100%);
+        width: 70%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: var(--cor-branco);
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        padding: 4rem 2rem 2rem;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;  /* ← Adicione esta linha */
+    }
+
+    /* Sidebar aberto */
+    .header.sidebar-open {
+        transform: translateX(0) !important;
+    }
+
+    /* Mostra overlay quando sidebar está aberto */
+    .sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
     .rotas {
+        flex-direction: column;
         gap: 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        padding-top: 2rem;
+    }
+
+    .rotas li {
+        width: 100%;
+    }
+
+    .rota {
+        font-size: var(--font-s2);
+        padding: 1rem 0;
+        width: 100%;
     }
 }
