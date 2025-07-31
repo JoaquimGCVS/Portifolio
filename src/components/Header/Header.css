@@ -39,3 +39,20 @@
     color: var(--cor-preto);
 }
 
+@media (max-width:870px) {
+    .rotas {
+        gap: 5rem;
+    }
+}
+
+@media (max-width:725px) {
+    .rotas {
+        gap: 3rem;
+    }
+}
+
+@media (max-width:430px) {
+    .rotas {
+        gap: 2rem;
+    }
+}
