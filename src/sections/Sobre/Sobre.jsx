@@ -1,6 +1,6 @@
 import "./Sobre.css";
 import { FaJava, FaReact, FaHtml5, FaCss3Alt, FaUserGraduate, FaSearch, FaUsers, FaGitAlt } from "react-icons/fa";
-import { SiJavascript, SiSpring, SiMysql, SiC, SiVercel, SiNetlify, SiVite, SiFigma } from "react-icons/si";
+import { SiJavascript, SiSpring, SiMysql, SiC, SiVercel, SiNetlify, SiVite, SiFigma, SiCamunda, SiCanva } from "react-icons/si";
 
 import certEv1 from '../../assets/certificados/eventos/AulaMagna.webp';
 
@@ -54,7 +54,7 @@ const Sobre = () => {
         <section id="sobre" className="sobre-section">
             <div className="texto-sobre">
                 <div className="card-tecnologias-ferramentas">
-                    <h2>Tecnologias que trabalho</h2>
+                    <h2>Tecnologias & Linguagens</h2>
                     <div className="tecnologias">
                         <div className="grupo-1">
                             <span className="tecnologia" title="Java"><FaJava /></span>
@@ -69,7 +69,7 @@ const Sobre = () => {
                             <span className="tecnologia" title="C"><SiC /></span>
                         </div>
                     </div>
-                    <h2>Feramentas que trabalho</h2>
+                    <h2>Ferramentas & Plataformas</h2>
                     <div className="ferramentas">
                         <div className="grupo-1">
                             <span className="ferramenta" title="Git"><FaGitAlt /></span>
@@ -79,6 +79,8 @@ const Sobre = () => {
                         </div>
                         <div className="grupo-2">
                             <span className="ferramenta" title="Figma"><SiFigma /></span>
+                            <span className="ferramenta" title="Canva"><SiCanva /></span>
+                            <span className="ferramenta" title="Camunda"><SiCamunda /></span>
                         </div>
                     </div>
                 </div>

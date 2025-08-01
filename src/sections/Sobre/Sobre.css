@@ -101,4 +101,8 @@
     .tecnologias, .ferramentas {
         flex-direction: column;
     }
+
+    .grupo-1 .tecnologia, .grupo-2 .tecnologia, .grupo-1 .ferramenta , .grupo-2 .ferramenta {
+        font-size: 3rem;
+    }
 }
