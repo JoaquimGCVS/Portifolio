@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import "./ModalCertificado.css";
-import { IoMdClose } from "react-icons/io";
 
 const ModalCertificado = ({imageSrc, onClose}) => {
     useEffect(() => {

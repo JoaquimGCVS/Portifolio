@@ -3,7 +3,7 @@ import "./ModalProjeto.css";
 import { IoMdClose } from "react-icons/io";
 import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
-import { MdVerified } from "react-icons/md";
+import { MdOutlinePhonelink } from "react-icons/md";
 
 const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub, responsivo }) => {
     useEffect(() => {
@@ -28,7 +28,7 @@ const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub, responsivo }) =>
                         </div>
                         {responsivo && (
                             <p className="responsivo-aviso">
-                                100% Responsivo < MdVerified />
+                                100% Responsivo < MdOutlinePhonelink size={30}/>
                             </p>
                         )}
                     </div>
