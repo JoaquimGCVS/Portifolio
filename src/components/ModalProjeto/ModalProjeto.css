@@ -16,9 +16,8 @@
     border-radius: 10px;
     color: var(--cor-preto);
     display: flex;
-    min-width: 350px;
     max-width: 90vw;
-    max-height: 90vh;
+    max-height: 70vh;
     padding: 2rem;
     align-items: flex-start;
     overflow-y: auto;          
