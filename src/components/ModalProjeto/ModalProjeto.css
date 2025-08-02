@@ -72,10 +72,20 @@
     background-color: var(--cor-hover);
 }
 
-.projeto-conteudo iframe {
+.projeto-conteudo video {
     width: 100%;
-    height: 22rem;
+    height: auto;
     border-radius: 10px;
+}
+
+.projeto-conteudo .responsivo-aviso {
+    font-size: var(--font-s2);
+    display: flex;
+    align-items: center;
+    color: var(--cor-preto);
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    gap: 0.5rem;
 }
 
 .projeto-conteudo .texto-modal {

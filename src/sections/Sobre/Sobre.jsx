@@ -1,6 +1,6 @@
 import "./Sobre.css";
 import { FaJava, FaReact, FaHtml5, FaCss3Alt, FaUserGraduate, FaSearch, FaUsers, FaGitAlt } from "react-icons/fa";
-import { SiJavascript, SiSpring, SiMysql, SiC, SiVercel, SiNetlify, SiVite, SiFigma, SiCamunda, SiCanva } from "react-icons/si";
+import { SiGooglesearchconsole, SiJavascript, SiSpring, SiMysql, SiC, SiVercel, SiNetlify, SiVite, SiFigma, SiCamunda, SiCanva } from "react-icons/si";
 
 import certEv1 from '../../assets/certificados/eventos/AulaMagna.webp';
 
@@ -81,6 +81,7 @@ const Sobre = () => {
                             <span className="ferramenta" title="Figma"><SiFigma /></span>
                             <span className="ferramenta" title="Canva"><SiCanva /></span>
                             <span className="ferramenta" title="Camunda"><SiCamunda /></span>
+                            <span className="ferramenta" title="Google Search Console"><SiGooglesearchconsole /></span>
                         </div>
                     </div>
                 </div>

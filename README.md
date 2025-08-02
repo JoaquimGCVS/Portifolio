@@ -1,12 +1,12 @@
 # 🚀 Portfólio Pessoal – Joaquim Vilela
 
-Este repositório contém meu **portfólio pessoal**, desenvolvido inteiramente por **Joaquim Vilela** utilizando **React + Vite**.
-O projeto tem como objetivo apresentar minha **trajetória profissional**, **habilidades técnicas**, **projetos desenvolvidos** e **certificações obtidas** de forma elegante e interativa.
+Este repositório contém meu **portfólio pessoal**, desenvolvido por **mim** utilizando **React + Vite**.
+O projeto tem como objetivo apresentar minha **trajetória profissional**, **habilidades técnicas**, **projetos desenvolvidos** e **certificações obtidas**.
 
-Toda a estrutura do site foi pensada para manter a **harmonia visual**, **evitar poluição visual** e ao mesmo tempo **destacar as informações mais importantes**, criando uma experiência profissional para visitantes e recrutadores.
+A estrutura do site foi pensada para manter a **harmonia visual**, **evitar poluição visual** e ao mesmo tempo **destacar as informações mais importantes**.
 
 O portfólio está publicado e disponível no domínio:
-🔗 **[Em breve - Link do portfólio]()**
+🔗 **[https://joaquimvilela.netlify.app/]()**
 
 > 💡 Este projeto representa minha evolução como desenvolvedor e está em constante atualização.  
 > O código está disponível para fins de demonstração e aprendizado da comunidade.
@@ -94,7 +94,6 @@ O portfólio está publicado e disponível no domínio:
 * **React Router DOM** - Navegação entre seções
 * **React Icons** - Ícones modernos e consistentes
 * **CSS3** - Estilização personalizada e responsiva
-* **ESLint** - Padronização e qualidade de código
 
 ---
 
