@@ -17,7 +17,7 @@
     color: var(--cor-preto);
     display: flex;
     max-width: 90vw;
-    max-height: 70vh;
+    max-height: 90vh;
     padding: 2rem;
     align-items: flex-start;
     overflow-y: auto;          
@@ -68,7 +68,7 @@
 }
 
 .video-links .links a:hover {
-    background-color: var(--cor-hover);
+    background-color: var(--cor-preto);
 }
 
 .projeto-conteudo video {
@@ -123,6 +123,24 @@
     color: var(--cor-preto);
 }
 
+.btn-toggle-video {
+    padding: 0.8rem 1.2rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-preto);
+    border-radius: 10px;
+    font-size: var(--font-s1);
+    transition: background 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+}
+
+.btn-toggle-video:hover {
+    background-color: var(--cor-hover);
+}
+
 /* Esconde botão hambúrguer quando modal está aberto */
 .modal-overlay ~ .menu-toggle {
     display: none !important;
@@ -151,6 +169,9 @@
 }
 
 @media (max-width:725px) {
+    .modal-conteudo {
+        max-height: 70vh;
+    }
     .h3-links {
         flex-direction: column;
 

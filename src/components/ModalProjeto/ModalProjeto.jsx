@@ -1,11 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./ModalProjeto.css";
 import { IoMdClose } from "react-icons/io";
 import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
-import { MdOutlinePhonelink } from "react-icons/md";
+import { MdOutlinePhonelink, MdComputer, MdPhoneAndroid } from "react-icons/md";
 
 const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub, responsivo }) => {
+    const [videoDesktop, setVideoDesktop] = useState(true); // true = desktop, false = mobile
+
     useEffect(() => {
         document.body.style.overflow = "hidden";
         return () => { document.body.style.overflow = ""; };
@@ -15,10 +17,20 @@ const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub, responsivo }) =>
             <div className="modal-conteudo" onClick={e => e.stopPropagation()}>
                 <div className="projeto-conteudo">
                     <div className="video-links">
-                        <video controls>
-                            <source src={projeto.video} type="video/mp4" />
+                        <video controls key={videoDesktop ? 'desktop' : 'mobile'}>
+                            <source src={videoDesktop ? projeto.video : projeto.videoMobile} type="video/mp4" />
                             Seu navegador não suporta vídeos HTML5.
                         </video>
+                        {responsivo && (
+                            <button
+                                className="btn-toggle-video"
+                                onClick={() => setVideoDesktop(!videoDesktop)}
+                                title={videoDesktop ? "Ver versão mobile" : "Ver versão desktop"}
+                            >
+                                {videoDesktop ? <MdPhoneAndroid size={20} /> : <MdComputer size={20} />}
+                                {videoDesktop ? "Mobile" : "Desktop"}
+                            </button>
+                        )}
                         <div className="h3-links">
                             <h3>Disponível em: </h3>
                             <div className="links">
@@ -28,7 +40,7 @@ const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub, responsivo }) =>
                         </div>
                         {responsivo && (
                             <p className="responsivo-aviso">
-                                100% Responsivo < MdOutlinePhonelink size={30}/>
+                                100% Responsivo < MdOutlinePhonelink size={30} />
                             </p>
                         )}
                     </div>
