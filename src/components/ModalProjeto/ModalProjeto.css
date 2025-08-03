@@ -135,13 +135,13 @@
     align-items: center;
     gap: 0.5rem;
     border: none;
+    width: fit-content;
 }
 
 .btn-toggle-video:hover {
     background-color: var(--cor-hover);
 }
 
-/* Esconde botão hambúrguer quando modal está aberto */
 .modal-overlay ~ .menu-toggle {
     display: none !important;
 }

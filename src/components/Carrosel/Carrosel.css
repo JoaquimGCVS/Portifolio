@@ -73,7 +73,7 @@
 
 @media (max-width: 585px) {
   .slide {
-    flex: 0 0 100%;
+    flex: 0 0 90%;
   }
 
   .carrossel-wrapper {
@@ -81,7 +81,6 @@
   }
 
   .navegar {
-    width: 2.5rem;
-    height: 2.5rem;
+    display: none;
   }
 }

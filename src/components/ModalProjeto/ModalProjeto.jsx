@@ -28,7 +28,7 @@ const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub, responsivo }) =>
                                 title={videoDesktop ? "Ver versão mobile" : "Ver versão desktop"}
                             >
                                 {videoDesktop ? <MdPhoneAndroid size={20} /> : <MdComputer size={20} />}
-                                {videoDesktop ? "Mobile" : "Desktop"}
+                                {videoDesktop ? "Ver versão Mobile" : "Ver versão Desktop"}
                             </button>
                         )}
                         <div className="h3-links">
