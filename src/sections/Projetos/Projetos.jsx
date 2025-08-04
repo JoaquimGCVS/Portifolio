@@ -83,8 +83,8 @@ const projetos = [
       <SiNetlify title="Netlify" />
     ],
     responsivo: true,
-    video: "/videos/portifolio-dev.mp4",
-    videoMobile: "/videos/portifolio-dev.mp4",
+    video: "/videos/portifolio-joaquim-vilela.mp4",
+    videoMobile: "/videos/portifolio-joaquim-vilela-mobile.mp4",
     linkSite: "https://joaquimvilela.netlify.app/",
     linkGithub: "https://github.com/JoaquimGCVS/Portifolio"
   }
