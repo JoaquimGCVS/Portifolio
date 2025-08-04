@@ -26,8 +26,8 @@ const projetos = [
       <SiGooglesearchconsole title="Google Search Console" />
     ],
     responsivo: true,
-    video: "/videos/Estoque-Full-Stack.mp4",
-    videoMobile: "/videos/Estoque-Full-Stack.mp4",
+    video: "/videos/site-institucional-orthomoveis.mp4",
+    videoMobile: "/videos/site-institucional-orthomoveis-mobile.mp4",
     linkSite: "https://orthomoveiscolchoes.com.br/",
     linkGithub: "https://github.com/JoaquimGCVS/site-institucional-orthomoveis"
   },

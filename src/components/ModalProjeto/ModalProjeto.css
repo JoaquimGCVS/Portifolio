@@ -78,6 +78,17 @@
     box-shadow: 0 2px 8px var(--cor-cinza);
 }
 
+.projeto-conteudo .video-desktop {
+    width: 100%;
+    height: auto;
+}
+
+.projeto-conteudo .video-mobile {
+    height: auto;
+    align-self: center;
+    max-width: 200px;
+}
+
 .projeto-conteudo .responsivo-aviso {
     font-size: var(--font-s2);
     display: flex;
@@ -167,6 +178,11 @@
     .projeto-conteudo .texto-modal {
         width: 100%;
     }
+    
+    .projeto-conteudo .video-mobile {
+        width: 50%;
+        max-width: 250px;
+    }
 }
 
 @media (max-width:725px) {
@@ -177,5 +193,10 @@
         flex-direction: column;
 
         align-items: start;
+    }
+    
+    .projeto-conteudo .video-mobile {
+        width: 70%;
+        max-width: 200px;
     }
 }

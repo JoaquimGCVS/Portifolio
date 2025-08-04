@@ -17,7 +17,11 @@ const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub, responsivo }) =>
             <div className="modal-conteudo" onClick={e => e.stopPropagation()}>
                 <div className="projeto-conteudo">
                     <div className="video-links">
-                        <video controls key={videoDesktop ? 'desktop' : 'mobile'}>
+                        <video 
+                            controls 
+                            key={videoDesktop ? 'desktop' : 'mobile'}
+                            className={videoDesktop ? 'video-desktop' : 'video-mobile'}
+                        >
                             <source src={videoDesktop ? projeto.video : projeto.videoMobile} type="video/mp4" />
                             Seu navegador não suporta vídeos HTML5.
                         </video>
