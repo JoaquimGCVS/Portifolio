@@ -38,7 +38,9 @@ const ModalProjeto = ({ projeto, onClose, linkSite, linkGithub, responsivo }) =>
                         <div className="h3-links">
                             <h3>Disponível em: </h3>
                             <div className="links">
-                                <a href={linkSite} target="_blank"><TbWorld size={20} /> Site</a>
+                                {linkSite && linkSite.trim() !== "" && (
+                                    <a href={linkSite} target="_blank"><TbWorld size={20} /> Site</a>
+                                )}
                                 <a href={linkGithub} target="_blank"><FaGithub size={20} /> Código</a>
                             </div>
                         </div>
