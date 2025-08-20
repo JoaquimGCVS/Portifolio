@@ -5,9 +5,10 @@ import certSiteInst from '../../assets/projetos/SiteInstitucionalOrtho.webp';
 import certEstoqueOrtho from '../../assets/projetos/EstoqueOrtho.webp';
 import certEstoqueFull from '../../assets/projetos/EstoqueFullStack.webp';
 import certPortifolio from '../../assets/projetos/Portifolio.webp';
+import certStayHard from '../../assets/projetos/StayHard.webp';
 
 import { FaJava, FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { SiGooglesearchconsole, SiJavascript, SiSpring, SiMysql, SiC, SiVercel, SiNetlify, SiVite, SiFigma } from "react-icons/si";
+import { SiGooglesearchconsole, SiJavascript, SiSpring, SiPostgresql, SiMysql, SiC, SiVercel, SiNetlify, SiVite, SiFigma } from "react-icons/si";
 import ModalProjeto from "../../components/ModalProjeto/ModalProjeto";
 import { useState } from "react";
 
@@ -50,7 +51,24 @@ const projetos = [
     linkGithub: "https://github.com/JoaquimGCVS/Orthomoveis-Colchoes-Estoque"
   },
   {
-    titulo: "Joaquim Estoque Full-Stack",
+    titulo: "Stay Hard",
+    imagem: certStayHard,
+    data: "Agosto 2025",
+    desc1: "Desenvolvi esta plataforma full stack para gestão de treinos e exercícios, utilizando React no front-end e Spring Boot com PostgreSQL no back-end.",
+    desc2: "O foco principal foi criar uma solução prática e moderna para cadastro, edição e acompanhamento de treinos, com interface leve e recursos como gráficos dinâmicos e filtros instantâneos.",
+    desc3: "Este projeto me permitiu aprofundar conhecimentos em integração de tecnologias, componentização e experiência do usuário, unindo minha paixão por desenvolvimento e esportes.",
+    tecnologias: [
+      <FaJava title="Java" />, 
+      <SiSpring title="Spring Boot" />, 
+      <FaReact title="React" />,
+      <SiPostgresql title="PostgreSQL" /> 
+    ],
+    video: "/videos/Stay-Hard.mp4",
+    linkSite: "",
+    linkGithub: "https://github.com/JoaquimGCVS/StayHard"
+  },
+  {
+    titulo: "Joaquim Estoque",
     imagem: certEstoqueFull,
     data: "Janeiro 2025",
     desc1: "Desenvolvi este sistema full stack. Utilizei Spring Boot com MySQL para criar uma API robusta e segura, enquanto o front-end foi construído com HTML + CSS e JavaScript.",
@@ -71,7 +89,7 @@ const projetos = [
     linkGithub: "https://github.com/JoaquimGCVS/Estoque-Full-Stack"
   },
   {
-    titulo: "Portifólio - Joaquim Vilela",
+    titulo: "Meu Portifólio",
     imagem: certPortifolio,
     data: "Julho 2025",
     desc1: "Criei este portfólio como uma forma de apresentar minha trajetória profissional e projetos desenvolvidos. Utilizei React + Vite para construir uma experiência moderna que reflete minha evolução como desenvolvedor.",

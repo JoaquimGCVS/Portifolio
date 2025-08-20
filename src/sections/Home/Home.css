@@ -38,11 +38,12 @@
     box-shadow: 0 2px 8px var(--cor-cinza);
     gap: 0.5rem;
     width: 300px;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .botao-cv:hover {
     background-color: var(--cor-hover);
+    transform: scale(1.02);
 }
 
 .redes-sociais {
@@ -53,11 +54,12 @@
 .rede-social {
     font-size: var(--font-s4);
     color: var(--cor-cinza);
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .rede-social:hover {
     color: var(--cor-preto);
+    transform: scale(1.05);
 }
 
 .imagem img {

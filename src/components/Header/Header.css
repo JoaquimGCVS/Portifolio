@@ -28,7 +28,7 @@
     text-decoration: none;
     color: var(--cor-hover);
     font-size: var(--font-s1);
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, trasnform 0.2s ease;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -36,6 +36,7 @@
 
 .rota:hover {
     color: var(--cor-preto);
+    transform: scale(1.03);
 }
 
 /* Botão hambúrguer - inicialmente oculto */

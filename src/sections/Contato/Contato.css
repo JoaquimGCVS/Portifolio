@@ -20,11 +20,12 @@
 
 .minhas-redes-sociais a {
     color: var(--cor-preto);
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .minhas-redes-sociais a:hover {
     color: var(--cor-hover);
+    transform: scale(1.05);
 }
 
 .contato-section .citacao {
